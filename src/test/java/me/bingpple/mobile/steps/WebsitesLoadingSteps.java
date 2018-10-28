@@ -26,12 +26,12 @@ public class WebsitesLoadingSteps extends ScenarioSteps {
         basePage.open();
     }
 
-    @When("^user wants to load \"([^\"]*)\" $")
+    @When("^user wants to load \"([^\"]*)\"$")
     public void userWantsToLoad(String url) {
         basePage.getDriver().navigate().to(url);
     }
 
-    @Then("^\"([^\"]*)\" home page should be loaded$")
+    @Then("^\"([^\"]*)\" page should be loaded$")
     public void homePageShouldBeLoaded(String url) {
         assertThat(basePage.getDriver().getCurrentUrl().contains(url));
     }
