@@ -1,0 +1,28 @@
+{
+  "capabilities": [
+    {
+      "browserName": "Safari",
+      "version": "12.0.0",
+      "platformVersion": "12.0",
+      "maxInstances": 1,
+      "platformName": "iOS",
+      "deviceName": "iPhone XS Max",
+      "automationName":"XCUITest",
+      "noReset":"true",
+      "wdaLaunchTimeout":"240000",
+      "wdaConnectionTimeout":"240000"
+    }
+  ],
+  "configuration": {
+    "proxy": "org.openqa.grid.selenium.proxy.DefaultRemoteProxy",
+    "url": "http://192.168.200.172:20000/wd/hub",
+    "host": "192.168.200.172",
+    "port": 20000,
+    "maxSession": 1,
+    "register": true,
+    "registerCycle": 5000,
+    "hubPort": 4444,
+    "hubHost": "192.168.204.175",
+    "hubProtocol": "http"
+  }
+}
